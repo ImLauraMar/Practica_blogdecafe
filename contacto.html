@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style/normalize.css">
   <link rel="stylesheet" href="./style/app.css">
   <title>Contacto</title>
 </head>
@@ -42,12 +43,12 @@
 <!-- INICIA CONTACTO -->
    <section class="Contacto">
     <h3 class="titulo-contacto">Contáctanos</h3>
-      <form class="formulario-contacto"action="">
+      <form class="formulario-contacto"action="" method="">
         <div class="nameAndEmail">
-          <input type="text" name="nombre" id="" placeholder="Nombre completo">
-          <input type="email" name="email" id="" placeholder="Email">
+          <input type="text" name="nombre" id="" placeholder="Nombre completo" required>
+          <input type="email" name="email" id="" placeholder="Email" pattern="[a-z0-9.]+@[a-z0-9]+\.[a-z]{2,3}$" required>
         </div>
-        <textarea name="" id="" cols="30" rows="10" placeholder="Tu mensaje..."></textarea>
+        <textarea name="" id="" cols="30" rows="10" placeholder="Tu mensaje..." required></textarea>
         <button class="btn-enviar" type="submit">Enviar Mensaje</button>
       </form>
       <p class="p-form">¡No dudes en llenar el formulario!</p>
