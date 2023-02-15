@@ -42,18 +42,30 @@
 
 <!-- INICIA CONTACTO -->
    <section class="Contacto">
-    <h3 class="titulo-contacto">Contáctanos</h3>
-      <form class="formulario-contacto"action="" method="">
+    <div class="titulo-contacto">
+      <h3>Contáctanos</h3>
+    </div>
+    <div class="formulario-contacto">
+      <form action="" method="">
         <div class="nameAndEmail">
           <input type="text" name="nombre" id="" placeholder="Nombre completo" required>
           <input type="email" name="email" id="" placeholder="Email" pattern="[a-z0-9.]+@[a-z0-9]+\.[a-z]{2,3}$" required>
         </div>
-        <textarea name="" id="" cols="30" rows="10" placeholder="Tu mensaje..." required></textarea>
-        <button class="btn-enviar" type="submit">Enviar Mensaje</button>
+        <div class="textarea">
+          <textarea class="mensaje" name="" id="" cols="105" rows="7" placeholder="Tu mensaje..." required></textarea>
+        </div>
+        <div class="btn">
+          <button class="btn-enviar" type="submit">Enviar Mensaje</button>
+
+        </div>
+
+
       </form>
+    </div>
+
       <p class="p-form">¡No dudes en llenar el formulario!</p>
    </section>
-   <button>Imprimir data</button>
+   <button class="btn-data">Imprimir data</button>
    
   
 </body>
