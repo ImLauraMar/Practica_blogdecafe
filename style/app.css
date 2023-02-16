@@ -1,16 +1,23 @@
-:root {
+/* :root {
     --firstColor: #eeeeee;
     --secondColor: #809a70;
     --bgColor: #809a70;
     --thirdColor: #fff;
+} */
+:root {
+    --firstColor: #eeeeee;
+    --secondColor: #800000;
+    --thirdColor: #623222;
+    --bgColor: #800000;
+    --thirdColor: #fff;
 }
 
 body {
-    background-color: #eee9e4;
+    background-color: #eeeeee;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 1.6rem;
     margin: 0;
-    
+
 }
 
 a:link,
@@ -24,8 +31,10 @@ header {
     width: 100%;
     align-items: center;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    gap: 2rem;
     position: fixed;
+    z-index: 2;
 }
 
 header h2 {
@@ -50,7 +59,7 @@ nav a {
 }
 
 .banner {
-    background-image: url(https://images.pexels.com/photos/6205605/pexels-photo-6205605.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-image: url(https://images.pexels.com/photos/773958/pexels-photo-773958.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top center;
@@ -58,7 +67,7 @@ nav a {
     height: 53vh;
     margin: 0;
     position: relative;
-    /* background-attachment:fixed; */
+    background-attachment: fixed;
 
 }
 
@@ -68,7 +77,16 @@ nav a {
     inset: 0;
     background: linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, #00000e98 100%);
 }
+.left-ban{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
 
+}
+.left-ban img{
+    height: 25px;
+    object-fit: cover;
+}
 
 
 .banner_Text {
@@ -82,7 +100,7 @@ nav a {
     color: var(--firstColor);
     position: relative;
     padding: 0 20px;
-    z-index: 2;
+
 }
 
 
@@ -102,40 +120,41 @@ nav a {
 }
 
 .mainHome {
-    display: grid;
-    grid-template-columns: 3fr 1fr;
-    max-width: 120rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin: 0 auto;
     margin-top: 6rem;
     align-content: stretch;
-    justify-content: space-between;
-    align-items: baseline;
+    justify-content: center;
     justify-items: start;
 }
 
 .mainItems {
-    padding: 0 4rem;
+    padding: 0 4rem 0 6rem;
+    width: 70vw;
 }
 
 .mainItems h2 {
     color: var(--secondColor);
     text-transform: capitalize;
     font-size: 3.8rem;
-    margin: 1rem 0;
+    margin: 1rem 0 2rem;
+
 }
 
 .mainItems article {
     background-color: var(--secundario);
-    padding-bottom: 2rem;
-    margin-bottom: 2rem;
-    box-shadow: 4px 4px 4px 0 #30303096, -4px -4px 3px 0 rgb(255 255 255 / 71%);
-    padding: 3rem;
-    padding-bottom: 5rem;
+    margin: 2rem auto;
+    box-shadow: 4px 4px 6px 0 #7c191996, -4px -4px 3px 0 rgb(255 255 255 / 71%);
+    padding: 2.5rem;
     border-radius: 1rem;
+
 }
 
 .mainItems img {
     width: 100%;
+    height: 20rem;
     border-radius: 1rem;
     max-height: 35rem;
     object-fit: cover;
@@ -155,94 +174,143 @@ main article button {
     border: none;
     border-radius: 1rem;
 }
-.courses{
-    padding: 0 4rem;
+
+.courses {
+    display: flex;
+    flex-direction: column;
+    padding: 0 2rem 0 1rem;
+    margin: 2rem;
 }
+
 .courses h2 {
     font-size: 1.875rem;
     color: var(--secondColor);
     text-transform: capitalize;
+    padding: 1rem;
+    
 }
-.courses h3{
+
+.container-article {
+    display: flex;
+    flex-direction: row;
+}
+
+.courses article {
+    display: flex;
+    flex-direction: column;
+    width: 18rem;
+    margin: 1.5rem;
+    padding: 1rem;
+}
+.courses article:hover{
+    border: 2px var(--bgColor) solid;
+    border-radius: 10px;
+}
+
+.courses h3 {
     color: #333;
     font-size: 1.2rem;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 400;
 }
-.coursesPrice{
+
+.coursesPrice {
     display: flex;
     justify-content: space-between;
-    gap: 2rem  ;
+    gap: 2rem;
+    margin: 1rem;
 }
-.coursesPrice p{
+
+.coursesPrice p {
     color: var(--secondColor);
-    margin: 0 0.5rem 0 0 ;
+    margin: 0 0.5rem 0 0;
     font-size: 1.44rem;
     font-weight: 100;
     text-transform: capitalize;
 }
-.coursesPrice span{
+
+.coursesPrice span {
     font-size: 1.25rem;
     color: #333;
     text-transform: capitalize;
 }
-.coursesPrice button{
+
+.btnarticle{
     border-radius: 0.5rem;
-    color: var(--secundario);
-    background-color: var(--primario);
-    padding: 1rem 2rem;
-    border: none;
+    color: var(--secondColor);
+    background-color: var(--firstColor);
+    border: 2px var(--bgColor) solid;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: capitalize;
+    padding: 5px;
+    /* padding: 0.5rem; */
+   
+}
+.btnarticle:hover{
+    background-color: var(--bgColor);
+    color: var(--firstColor);
+
 }
 
 
 /* todo INICIA CSS NOSOTROS */
 
-.tittleAboutUs{
+.tittleAboutUs {
     color: var(--secondColor);
     display: flex;
     justify-content: center;
     font-size: 3rem;
 }
 
-.article_nosotros{
+.article_nosotros {
     margin: 0 60px 50px;
     display: flex;
     justify-content: right;
 }
-.img_aboutUs{
+
+.img_aboutUs {
     width: 500px;
     object-fit: cover;
     max-height: 400px;
     margin-right: 40px;
 }
-.paragraph{
+
+.paragraph {
     display: flex;
     flex-direction: column;
 }
 
 
 /* INICIA CSS CONTACTO */
-.Contacto{
+.Contacto {
     height: 85vh;
     width: 100vw;
 }
-.titulo-contacto{
+
+.titulo-contacto {
     color: var(--secondColor);
     display: flex;
     justify-content: center;
     font-size: 3rem;
     margin-bottom: 0;
 }
-.formulario-contacto{
+
+.formulario-contacto {
     height: 60vh;
     width: 100vw;
     display: flex;
     justify-content: center;
 }
-.nameAndEmail{
+
+.nameAndEmail {
     width: 100vw;
     display: flex;
     justify-content: center;
 }
-.nameAndEmail input{
+
+.nameAndEmail input {
     width: 35%;
     margin: 20px 10px 0 10px;
     padding: 15px 0 15px 20px;
@@ -255,16 +323,18 @@ main article button {
     color: #797775;
     box-shadow: 4px 4px 4px 0 #30303096, -4px -4px 3px 0 rgb(255 255 255 / 71%);
 }
-.textarea{
+
+.textarea {
     display: flex;
     justify-content: center;
     border-radius: 8px;
 
 }
-.textarea .mensaje{
+
+.textarea .mensaje {
     padding: 30px 0 0 30px;
     margin: 1.5em 0;
-    border:none;
+    border: none;
     border-radius: 10px;
     background-color: var(--firstColor);
     /* -webkit-box-shadow: -11px -11px 0px -4px rgba(255,255,255,1);
@@ -272,10 +342,11 @@ main article button {
     box-shadow: -11px -11px 0px -4px rgba(255,255,255,1); */
     box-shadow: 4px 4px 4px 0 #30303096, -4px -4px 3px 0 rgb(255 255 255 / 71%);
 
-    
+
 
 }
-.btn-enviar{
+
+.btn-enviar {
     background-color: var(--firstColor);
     margin: 0 0 0 13rem;
     padding: 14px 1.5rem;
@@ -287,12 +358,44 @@ main article button {
     box-shadow: 4px 4px 4px 0 #30303096, -4px -4px 3px 0 rgb(255 255 255 / 71%);
 
 }
-.p-form{
+
+.p-form {
     display: flex;
     justify-content: center;
     font-size: 1.5rem;
 }
-.btn-data{
+
+.btn-data {
     margin-bottom: 1.5rem;
     font-size: 1.3rem
+}
+
+/* footer */
+
+footer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #4a0303;
+    /* set the background color of the footer to red */; 
+}
+
+
+footer nav {
+    display: flex;
+    justify-content: center;
+}
+
+footer nav ul {
+    padding: 1rem;
+}
+
+footer nav a {
+    font-size: 1rem;
+    padding: 0 2rem;
+    letter-spacing: 4px;
+}
+footer img{
+    opacity: 0.5;
+    width: 80px;
 }
