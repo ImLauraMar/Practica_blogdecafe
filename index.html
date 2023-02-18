@@ -14,22 +14,23 @@
 <body>
     <div class="banner">
         <header>
-           <div class="left-ban">
-            <a href="./index.html">
-                <h2 class="logo">Blog<span class="not">DeCafé</span></h2>
-            </a>
-            <img src="./img/coffee.png" alt="" >
-           </div>
+            <div class="left-ban">
+                <a href="./index.html">
+                    <h2 class="logo">Blog<span class="not">DeCafé</span></h2>
+                </a>
+                <img src="./img/coffee.png" alt="">
+            </div>
 
             <nav>
                 <ul>
                     <li>
-                        <a href="./nosotros.html"> Nosotros </a>
+                        <a class="active hov" href="./cursos.html"> Cursos </a>
                     </li>
                     <li>
-                        <a href="./cursos.html"> Cursos </a>
+                        <a class="hov" href="./nosotros.html"> Nosotros </a>
                     </li>
-                    <li><a href="./contacto.html"> Contacto </a>
+                    <li>
+                        <a  class="hov" href="./contacto.html"> Contacto </a>
                     </li>
                 </ul>
             </nav>
@@ -45,14 +46,14 @@
     </div>
 
     <main class="mainHome">
-
+        <h2> nuestro blog</h2>
 
 
         <section class="mainItems">
-            <h2> nuestro blog</h2>
+            
             <article>
                 <img src="https://images.pexels.com/photos/982612/pexels-photo-982612.jpeg" alt=" Cup of hot Coffe">
-                <h3> tres deliciosas recetas de café </h3>
+                <h3> el arte del latte </h3>
                 <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, totam amet atque eius exercitationem
                     cum facere ab eligendi dolorem quas!</p>
 
@@ -70,7 +71,15 @@
             <article>
                 <img src="https://images.pexels.com/photos/69976/pexels-photo-69976.jpeg"
                     alt=" Another cup of hot Coffe with grains in a white background">
-                <h3> tres deliciosas recetas de café </h3>
+                <h3> tres consejos para preparar su café molido </h3>
+                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, totam amet atque eius exercitationem
+                    cum facere ab eligendi dolorem quas!</p>
+                <button> Leer entrada </button>
+            </article>
+            <article>
+                <img src="https://images.pexels.com/photos/69976/pexels-photo-69976.jpeg"
+                    alt=" Another cup of hot Coffe with grains in a white background">
+                <h3> tres consejos para preparar su café molido </h3>
                 <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, totam amet atque eius exercitationem
                     cum facere ab eligendi dolorem quas!</p>
                 <button> Leer entrada </button>
@@ -95,11 +104,11 @@
                             <span> 20</span>
                         </p>
                     </div>
-                    <button class="btnarticle" > conoce más  </button>
+                    <button class="btnarticle"> conoce más </button>
                 </article>
 
                 <article>
-                    <h3> Tecnicas de preparación café frio.  </h3>
+                    <h3> Tecnicas de preparación café frio. </h3>
                     <div class="coursesPrice">
                         <p> <span> precio </span> gratis</p>
                         <p> <span> cupos </span> 50</p>
@@ -111,24 +120,39 @@
         </section>
     </main>
 
-<footer>
-    
-    <nav>
-        <ul>
-            <li>
-                <a href="./nosotros.html"> Nosotros </a>
-            </li>
-            <li>
-                <a href="./cursos.html"> Cursos </a>
-            </li>
-            <li><a href="./contacto.html"> Contacto </a>
-            </li>
-        </ul>
-    </nav>
-    <div>
-        <img src="./img/coffee.png" alt="">
-    </div>
-</footer>
+    <footer>
+
+        <div class="foot-a">
+            <nav>
+                <ul>
+                    <li>
+                        <a href="./cursos.html">Cursos</a>
+                    </li>
+                    <li>
+                        <a href="./nosotros.html">Nosotros</a>
+                    </li>
+                    <li>
+                        <a href="./contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="redes">
+                <p>Síguenos en nuestras redes</p>
+                <div class="iconred">
+                    <a href=""> <i class="fa-brands fa-facebook" style="color: #D2B48C";></i></a>
+                    <a href=""> <i class="fa-brands fa-instagram"></i></a>
+                    <a href=""> <i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+                
+
+            </div>
+        </div>
+        <div class="foot-b">
+            <img src="./img/coffee.png" alt="">
+        </div>
+    </footer>
+    <script src="https://kit.fontawesome.com/fd199912ef.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
