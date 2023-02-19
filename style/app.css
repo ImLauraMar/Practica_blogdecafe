@@ -5,17 +5,20 @@
     --thirdColor: #fff;
 } */
 :root {
-    --firstColor: #eeeeee;
+    --firstColor: #f7f1f1;
     --secondColor: #800000;
     --thirdColor: #623222;
     --bgColor: #800000;
-    --thirdColor: #f7f1f1;
+   
 }
 
 body {
     background-color: #f7f1f1;
+    background-image: url(../img/coffeg.png);
+    object-fit: contain;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 1.6rem;
+    width: 100vw;
     margin: 0;
 
 }
@@ -28,7 +31,7 @@ a:active {
 
 header {
     background-color: var(--bgColor);
-    width: 100%;
+    width: 100vw;
     align-items: center;
     display: flex;
     justify-content: space-evenly;
@@ -131,40 +134,52 @@ nav a {
 }
 
 .mainHome {
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 0 auto;
-    margin-top: 6rem;
-    align-content: stretch;
+    margin-top: 3rem;
     justify-content: center;
-    justify-items: start;
+    z-index: 1;
+}
+.mainHome h2 {
+    color: var(--secondColor);
+    text-transform: capitalize;
+    font-size: 4rem;
+    margin: 1rem 0 2rem;
+
 }
 
 .mainItems {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    gap: 3.5rem;
+    justify-content: space-around;
+    gap: 3rem 0;
     padding: 0 4rem 0;
+    margin: 3rem auto 4rem;
+    z-index: 1;
 }
 
-.mainItems h2 {
-    color: var(--secondColor);
-    text-transform: capitalize;
-    font-size: 2rem;
-    margin: 1rem 0;
-
-}
 
 .mainItems article {
-    background-color: var(--secundario);
-    box-shadow: 4px 4px 6px 0 #7c191996, -4px -4px 3px 0 rgb(255 255 255 / 71%);
-    padding: 2rem;
+    background-color: var(--firstColor);
+    /* box-shadow: 4px 4px 4px 0 #7c191996, -4px -4px 3px 0 rgb(255 255 255 / 71%); */
+    box-shadow: 17px 17px 46px -29px #7c191996;
+    border-left: .5px #c6c9c3 solid;
+    border-top:.5px #c6c9c3 solid ;
+    padding: 2rem 3rem 4rem;
     border-radius: 1rem;
-    height: 50%;
-    width:35% ;
+    /* height: 50%;
+    width:35% ; */
+    z-index: 5;
 
+}
+.mainItems article:hover{
+    transform: scale(0.98);
+    transition: ease;
+    box-shadow: 4px 4px 4px 0px #7c191996, 0px 0px 0px 0 #ffffff;
+    border-left:none ;
 }
 
 .mainItems img {
@@ -179,6 +194,7 @@ main article h3 {
     color: var(--secondColor);
     font-size: 1.5rem;
     text-transform: capitalize;
+    margin-bottom: 10px;
 }
 main article p {
     text-align: justify;
@@ -189,9 +205,11 @@ main article button {
     background-color: var(--secondColor);
     color: var(--firstColor);
     padding: 10px 12px;
+    margin: 0 auto 20px;
     font-size: 1.2rem;
     border: none;
     border-radius: 1rem;
+    letter-spacing: 4px;
 }
 
 .courses {
@@ -220,6 +238,7 @@ main article button {
     width: 18rem;
     margin: 1.5rem;
     padding: 1rem;
+    background-color: var(--firstColor);
 }
 .courses article:hover{
     border: 2px var(--bgColor) solid;
@@ -396,6 +415,7 @@ footer {
     align-items: center;
     flex-direction: column;
     background-color: #4a0303;
+    width: 100%
     /* set the background color of the footer to red */; 
 }
 
@@ -444,7 +464,7 @@ footer img{
 
 @media  (max-width:480px) {
     .mainItems article{
-        height: 80vh;
+        height: 95vh;
         width: 70vw ;
     }
     .mainItems article img{
@@ -452,6 +472,13 @@ footer img{
     }
     .mainItems article p{
         font-size: 16px;
+    }
+    main article button {
+       
+        padding: 9px 10px;
+        font-size: 15px;
+        border: none;
+        border-radius: 1rem;
     }
 }
 @media  (max-width:768px) {
@@ -468,13 +495,13 @@ footer img{
 }
 @media  (max-width:1279px) {
     .mainItems article{
-        height: 60vh;
-        width: 60vw ;
+        height: 50vh;
+        width: 30vw ;
     }
     .mainItems article img{
-        height: 37vh;
+        height: 37 vh;
     }
     .mainItems article p{
-        font-size: 16px;
+        font-size: 18px;
     }
 }
