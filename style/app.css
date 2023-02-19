@@ -51,8 +51,24 @@ header h2 {
 
 nav ul li {
     display: inline;
-    margin: 5PX 10px 5px 0px;
+    margin: 5px 10px 5px 0px;
+    /* background-color:#333; */
+    border-radius: 20px;
+    padding: 3px 5px;
+    transition: all .5s ease;
+
 }
+nav ul li:hover{
+    letter-spacing: 3px;
+    background-color:#623222;
+    color: hsl(0, 0%, 100%);
+    box-shadow: #4a0303 0px 5px 8px 1px;
+}
+nav ul li:active{
+    box-shadow: none;
+}
+
+
 
 nav a {
     color: var(--firstColor);
@@ -309,4 +325,16 @@ footer nav a {
 footer img{
     opacity: 0.5;
     width: 80px;
+}
+
+/* todo INICIA @MEDIA -> responsive */
+
+@media screen and (max-width: 700px) {
+    /* Responsive header */
+    header{
+        font-size:.8rem;
+    }
+    header h2{
+        font-size: 2.5rem;
+    }
 }
