@@ -5,336 +5,427 @@
     --thirdColor: #fff;
 } */
 :root {
-    --firstColor: #eeeeee;
-    --secondColor: #800000;
-    --thirdColor: #623222;
-    --bgColor: #800000;
-    --thirdColor: #fff;
+  --firstColor: #eeeeee;
+  --secondColor: #800000;
+  --thirdColor: #623222;
+  --bgColor: #800000;
+  --thirdColor: #fff;
 }
 
 body {
-    background-color: #eeeeee;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 1.6rem;
-    margin: 0;
-
+  background-color: #eeeeee;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1.6rem;
+  margin: 0;
 }
 
 a:link,
 a:visited,
 a:active {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 header {
-    background-color: var(--bgColor);
-    width: 100%;
-    align-items: center;
-    display: flex;
-    justify-content: space-evenly;
-    gap: 2rem;
-    position: fixed;
-    z-index: 2;
+  background-color: var(--bgColor);
+  width: 100%;
+  align-items: center;
+  display: flex;
+  justify-content: space-evenly;
+  gap: 2rem;
+  position: fixed;
+  z-index: 2;
 }
 
 header h2 {
-    color: var(--firstColor);
-    font-size: 50px;
-    font-weight: 100;
-    margin: 0;
-
+  color: var(--firstColor);
+  font-size: 50px;
+  font-weight: 100;
+  margin: 0;
 }
 
 .not {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 nav ul li {
-    display: inline;
-    margin: 5px 10px 5px 0px;
-    /* background-color:#333; */
-    border-radius: 20px;
-    padding: 3px 5px;
-    transition: all .5s ease;
-
+  display: inline;
+  text-align: center;
+  margin: 5px 10px 5px 0px;
+  /* background-color:#333; */
+  border-radius: 15px;
+  padding: 3px 5px;
+  transition: all 0.5s ease;
 }
-nav ul li:hover{
-    letter-spacing: 3px;
-    background-color:#623222;
-    color: hsl(0, 0%, 100%);
-    box-shadow: #4a0303 0px 5px 8px 1px;
+nav ul li:hover {
+  letter-spacing: 3px;
+  background-color: #6232223f;
+  color: hsl(0, 0%, 100%);
+  box-shadow: #4a0303 0px 5px 8px 1px;
 }
-nav ul li:active{
-    box-shadow: none;
+nav ul li:active {
+  box-shadow: none;
 }
-
-
 
 nav a {
-    color: var(--firstColor);
+  color: var(--firstColor);
 }
 
 .banner {
-    background-image: url(https://images.pexels.com/photos/773958/pexels-photo-773958.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: top center;
-    min-height: 100vh;
-    height: 53vh;
-    margin: 0;
-    position: relative;
-    background-attachment: fixed;
-
+  background-image: url(https://images.pexels.com/photos/773958/pexels-photo-773958.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  min-height: 100vh;
+  height: 53vh;
+  margin: 0;
+  position: relative;
+  background-attachment: fixed;
 }
 
 .banner::before {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, #00000e98 100%);
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, #00000e98 100%);
 }
-.left-ban{
-    display: flex;
-    flex-direction: row;
-    gap: 1rem;
-
+.left-ban {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
 }
-.left-ban img{
-    height: 25px;
-    object-fit: cover;
+.left-ban img {
+  height: 25px;
+  object-fit: cover;
 }
-
 
 .banner_Text {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-    text-align: center;
-    margin: 0 auto;
-    color: var(--firstColor);
-    position: relative;
-    padding: 0 20px;
-
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  text-align: center;
+  margin: 0 auto;
+  color: var(--firstColor);
+  position: relative;
+  padding: 0 20px;
 }
 
-
 .banner_Text h1 {
-    margin: 0;
-    font-weight: 100;
-    max-width: 700px;
-    margin: 0 auto;
-    font-size: 60px;
-    font-weight: bold;
-
+  margin: 0;
+  font-weight: 100;
+  max-width: 700px;
+  margin: 0 auto;
+  font-size: 60px;
+  font-weight: bold;
 }
 
 .banner_Text p {
-    text-shadow: 2px 2px 2px #000000;
-    font-size: 30px;
+  text-shadow: 2px 2px 2px #000000;
+  font-size: 30px;
 }
 
 .mainHome {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 0 auto;
-    margin-top: 6rem;
-    align-content: stretch;
-    justify-content: center;
-    justify-items: start;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  margin-top: 6rem;
+  align-content: stretch;
+  justify-content: center;
+  justify-items: start;
 }
 
 .mainItems {
-    padding: 0 4rem 0 6rem;
-    width: 70vw;
+  padding: 0 4rem 0 6rem;
+  width: 70vw;
 }
 
 .mainItems h2 {
-    color: var(--secondColor);
-    text-transform: capitalize;
-    font-size: 3.8rem;
-    margin: 1rem 0 2rem;
-
+  color: var(--secondColor);
+  text-transform: capitalize;
+  font-size: 3.8rem;
+  margin: 1rem 0 2rem;
 }
 
 .mainItems article {
-    background-color: var(--secundario);
-    margin: 2rem auto;
-    box-shadow: 4px 4px 6px 0 #7c191996, -4px -4px 3px 0 rgb(255 255 255 / 71%);
-    padding: 2.5rem;
-    border-radius: 1rem;
-
+  background-color: var(--secundario);
+  margin: 2rem auto;
+  box-shadow: 4px 4px 6px 0 #7c191996, -4px -4px 3px 0 rgb(255 255 255 / 71%);
+  padding: 2.5rem;
+  border-radius: 1rem;
 }
 
 .mainItems img {
-    width: 100%;
-    height: 20rem;
-    border-radius: 1rem;
-    max-height: 35rem;
-    object-fit: cover;
+  width: 100%;
+  height: 20rem;
+  border-radius: 1rem;
+  max-height: 35rem;
+  object-fit: cover;
 }
 
 main article h3 {
-    color: var(--secondColor);
-    font-size: 3rem;
-    text-transform: capitalize;
+  color: var(--secondColor);
+  font-size: 3rem;
+  text-transform: capitalize;
 }
 
 main article button {
-    background-color: var(--secondColor);
-    color: var(--firstColor);
-    padding: 1.5rem 3rem;
-    font-size: 2rem;
-    border: none;
-    border-radius: 1rem;
+  background-color: var(--secondColor);
+  color: var(--firstColor);
+  padding: 1.5rem 3rem;
+  font-size: 2rem;
+  border: none;
+  border-radius: 1rem;
 }
 
 .courses {
-    display: flex;
-    flex-direction: column;
-    padding: 0 2rem 0 1rem;
-    margin: 2rem;
+  display: flex;
+  flex-direction: column;
+  padding: 0 2rem 0 1rem;
+  margin: 2rem;
 }
 
 .courses h2 {
-    font-size: 1.875rem;
-    color: var(--secondColor);
-    text-transform: capitalize;
-    padding: 1rem;
-    
+  font-size: 1.875rem;
+  color: var(--secondColor);
+  text-transform: capitalize;
+  padding: 1rem;
 }
 
 .container-article {
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
 }
 
 .courses article {
-    display: flex;
-    flex-direction: column;
-    width: 18rem;
-    margin: 1.5rem;
-    padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  width: 18rem;
+  margin: 1.5rem;
+  padding: 1rem;
 }
-.courses article:hover{
-    border: 2px var(--bgColor) solid;
-    border-radius: 10px;
+.courses article:hover {
+  border: 2px var(--bgColor) solid;
+  border-radius: 10px;
 }
 
 .courses h3 {
-    color: #333;
-    font-size: 1.2rem;
-    text-align: center;
-    text-transform: uppercase;
-    font-weight: 400;
+  color: #333;
+  font-size: 1.2rem;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 400;
 }
 
 .coursesPrice {
-    display: flex;
-    justify-content: space-between;
-    gap: 2rem;
-    margin: 1rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  margin: 1rem;
 }
 
 .coursesPrice p {
-    color: var(--secondColor);
-    margin: 0 0.5rem 0 0;
-    font-size: 1.44rem;
-    font-weight: 100;
-    text-transform: capitalize;
+  color: var(--secondColor);
+  margin: 0 0.5rem 0 0;
+  font-size: 1.44rem;
+  font-weight: 100;
+  text-transform: capitalize;
 }
 
 .coursesPrice span {
-    font-size: 1.25rem;
-    color: #333;
-    text-transform: capitalize;
+  font-size: 1.25rem;
+  color: #333;
+  text-transform: capitalize;
 }
 
-.btnarticle{
-    border-radius: 0.5rem;
-    color: var(--secondColor);
-    background-color: var(--firstColor);
-    border: 2px var(--bgColor) solid;
-    font-size: 16px;
-    font-weight: 700;
-    text-transform: capitalize;
-    padding: 5px;
-    /* padding: 0.5rem; */
-   
+.btnarticle {
+  border-radius: 0.5rem;
+  color: var(--secondColor);
+  background-color: var(--firstColor);
+  border: 2px var(--bgColor) solid;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: capitalize;
+  padding: 5px;
+  /* padding: 0.5rem; */
 }
-.btnarticle:hover{
-    background-color: var(--bgColor);
-    color: var(--firstColor);
-
+.btnarticle:hover {
+  background-color: var(--bgColor);
+  color: var(--firstColor);
 }
-
 
 /* todo INICIA CSS NOSOTROS */
 
 .tittleAboutUs {
-    color: var(--secondColor);
-    display: flex;
-    justify-content: center;
-    font-size: 3rem;
+  color: var(--secondColor);
+  display: flex;
+  justify-content: center;
+  font-size: 3rem;
 }
 
 .article_nosotros {
-    margin: 0 60px 50px;
-    display: flex;
-    justify-content: right;
+  margin: 0 60px 50px;
+  display: flex;
+  justify-content: right;
 }
 
 .img_aboutUs {
-    width: 500px;
-    object-fit: cover;
-    max-height: 400px;
-    margin-right: 40px;
+  width: 500px;
+  object-fit: cover;
+  max-height: 400px;
+  margin-right: 40px;
 }
 
 .paragraph {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 /* footer */
 
 footer {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    background-color: #4a0303;
-    /* set the background color of the footer to red */; 
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: #4a0303;
+  /* set the background color of the footer to red */
 }
 
-
 footer nav {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 footer nav ul {
-    padding: 1rem;
+  padding: 5px;
 }
 
 footer nav a {
-    font-size: 1rem;
-    padding: 0 2rem;
-    letter-spacing: 4px;
+  font-size: 1rem;
+  text-align: center;
+  letter-spacing: 4px;
+  font-weight: bold;
 }
-footer img{
-    opacity: 0.5;
-    width: 80px;
+
+footer nav ul li:hover {
+    letter-spacing: 3px;
+    background-color: #890707c5;
+    color: hsl(0, 0%, 100%);
+    box-shadow: #6c0e0e 0px 5px 8px 1px;
+  }
+
+
+
+/* Inicio la página de cursos */
+.section-courses {
+  width: 90vw;
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  flex-wrap: wrap;
+  padding: 40px;
+}
+
+.section-courses article {
+  display: block;
+  text-align: center;
+  width: 350px;
+  height: 500px;
+  box-shadow: inset 0 0 10px #cbc5c5;
+}
+
+.section-courses article:hover {
+  transform: translateY(-10px);
+  transition: transform 0.5s;
+  -webkit-box-shadow: 7px 5px 15px 5px #b9b6b6;
+  box-shadow: 7px 5px 15px 5px #b9b6b6;
+}
+
+.section-courses img {
+  width: 100%;
+  height: 40%;
+  object-fit: cover;
+}
+.section-courses h3 {
+  padding: 5px 15px;
+  font-size: 25px;
+  color: var(--bgColor);
+  font-weight: bold;
+  text-align: center;
+}
+
+.section-courses p {
+  margin: 8px;
+  padding: 5px;
+  font-size: 16px;
+  text-align: center;
+}
+
+.section-courses a {
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  border: solid;
+  border-radius: 8px;
+  padding: 10px 15px;
+  color: var(--bgColor);
+  font-size: 15px;
+}
+
+.section-courses a:hover {
+  background-color: var(--bgColor);
+  color: var(--firstColor);
 }
 
 /* todo INICIA @MEDIA -> responsive */
 
-@media screen and (max-width: 700px) {
-    /* Responsive header */
-    header{
-        font-size:.8rem;
-    }
-    header h2{
-        font-size: 2.5rem;
-    }
+@media screen and (max-width: 960px) {
+  .section-courses {
+    padding: 30px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  /* Responsive header */
+  header {
+    font-size: 0.8rem;
+  }
+  header h2 {
+    font-size: 2.5rem;
+  }
+
+  .section-courses {
+    padding: 20px;
+  }
+}
+
+@media screen and (max-width: 510px) {
+  .section-courses {
+    padding: 20px 15px;
+    gap: 15px;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .section-courses {
+    padding: 20px 10px;
+    gap: 15px;
+  }
+
+  .section-courses article {
+    width: 230px;
+    height: 350px;
+  }
+
+  .section-courses h3 {
+    font-size: 15px;
+  }
+
+  .section-courses p {
+    font-size: 10px;
+  }
+
+  .section-courses a {
+    font-size: 12px;
+  }
 }
