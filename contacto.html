@@ -1,72 +1,134 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./style/normalize.css">
-  <link rel="stylesheet" href="./style/app.css">
-  <title>Contacto</title>
-</head>
-<body>
-  <!-- INICIA BANNER -->
-  <div class="banner">
-    <header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style/normalize.css" />
+    <link rel="stylesheet" href="./style/app.css" />
+    <link rel="stylesheet" href="./style/contact.css">
+    <title>Contacto</title>
+      <!--ANIMATE CSS-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  </head>
+  
+  <body>
+    <!-- INICIA BANNER -->
+    <div class="banner">
+      <header>
         <a href="./index.html">
-            <h2 class="logo">Blog<span class="not">DeCafé</span></h2>
+          <h2 class="logo">Blog<span class="not">DeCafé</span></h2>
         </a>
 
         <nav>
-            <ul>
-                <li>
-                    <a href="./nosotros.html"> Nosotros </a>
-                </li>
-                <li>
-                    <a href=""> Cursos </a>
-                </li>
-                <li><a href="./contacto.html"> Contacto </a>
-                </li>
-            </ul>
+          <ul>
+            <li>
+              <a href="./nosotros.html"> Nosotros </a>
+            </li>
+            <li>
+              <a href=""> Cursos </a>
+            </li>
+            <li><a href="./contacto.html"> Contacto </a></li>
+          </ul>
         </nav>
-    </header>
-    <div class="banner_Text">
+      </header>
+      <div class="banner_Text   animate__animated animate__bounceInDown">
+        <h1>Blog de café con consejos y recursos</h1>
 
-        <h1> Blog de café con consejos y recursos </h1>
-
-        <p class="subtittleB"> Aprender de los expertos con las mejores recetas y consejos </p>
+        <p class="subtittleB">
+          Aprender de los expertos con las mejores recetas y consejos
+        </p>
+      </div>
     </div>
+    <!-- Termina banner -->
 
-
-</div>
-<!-- Termina banner -->
-
-<!-- INICIA CONTACTO -->
-   <section class="Contacto">
-    <div class="titulo-contacto">
-      <h3>Contáctanos</h3>
-    </div>
-    <div class="formulario-contacto">
-      <form action="" method="">
-        <div class="nameAndEmail">
-          <input type="text" name="nombre" id="" placeholder="Nombre completo" required>
-          <input type="email" name="email" id="" placeholder="Email" pattern="[a-z0-9.]+@[a-z0-9]+\.[a-z]{2,3}$" required>
+    <!-- INICIA CONTACTO -->
+    <section class="container">
+      <h2 class="container__title">Contáctanos</h2>
+      <div class="container__contact">
+        <!--todo INICIA FORMULARIO CONTACTO-->
+        <div class="contact__form">
+          <h3>Contáctanos</h3>
+          <form action="">
+            <p>
+              <label for="nombreCompleto">Nombre Completo</label>
+              <input type="text" name="nombreCompleto" id="nombreCompleto" required/>
+            </p>
+            <p>
+              <label for="">Correo Electrónico</label>
+              <input type="email" name="email" pattern="[a-z0-9.]+@[a-z0-9]+\.[a-z]{2,3}$" required/>
+            </p>
+            <p>
+              <label for="telefono">Número de Télefono</label>
+              <input
+                type="tel"
+                name="telefono"
+                id="telefono"
+                pattern="[0-9]{3}[0-9]{3}[0-9]{4}"
+                required
+              />
+            </p>
+            <p>
+              <label for="">Motivo de solicitud</label>
+              <input type="text" name="motivo" />
+            </p>
+            <p class="oneColumn">
+              <label for="">Mensaje</label>
+              <textarea
+                name="mensaje"
+                id="mensaje"
+                cols="30"
+                rows="10"
+              ></textarea>
+            </p>
+            <p class="oneColumn">
+              <button type="submit">Enviar</button>
+            </p>
+          </form>
         </div>
-        <div class="textarea">
-          <textarea class="mensaje" name="" id="" cols="105" rows="7" placeholder="Tu mensaje..." required></textarea>
+        <!--todo INICIA INFO para CONTACTO-->
+
+        <div class="contact__info">
+          <h4>Más información</h4>
+          <ul>
+            <li><i class="fa-solid fa-location-dot"></i>Usaquén</li>
+            <li><i class="fa-solid fa-phone-flip"></i>11 11 11 11</li>
+            <li><i class="fa-solid fa-envelope"></i>blogdelcafe@gm  ail.com</li>
+          </ul>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione
+            voluptas excepturi, qui magni accusamus et beatae! Incidunt,
+            veritatis vero. Eum?
+          </p>
+          <p>BlogCafe.com</p>
         </div>
-        <div class="btn">
-          <button class="btn-enviar" type="submit">Enviar Mensaje</button>
+      </div>
+    </section>
 
-        </div>
+    <!-- FOOTER -->
+    <footer>
+    
+      <nav>
+          <ul>
+              <li>
+                  <a href="./nosotros.html"> Nosotros </a>
+              </li>
+              <li>
+                  <a href="./cursos.html"> Cursos </a>
+              </li>
+              <li><a href="./contacto.html"> Contacto </a>
+              </li>
+          </ul>
+      </nav>
+      <div>
+          <img src="./img/coffee.png" alt="">
+      </div>
+  </footer>
 
-
-      </form>
-    </div>
-
-      <p class="p-form">¡No dudes en llenar el formulario!</p>
-   </section>
-   <button class="btn-data">Imprimir data</button>
-   
-  
-</body>
+    <!-- FONT AWESOME-->
+    <script
+      src="https://kit.fontawesome.com/0053586a91.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
