@@ -283,7 +283,7 @@ main article button {
 .article_nosotros {
     margin: 0 60px 50px;
     display: flex;
-    justify-content: right;
+    justify-content: center;
 }
 
 .img_aboutUs {
@@ -293,9 +293,15 @@ main article button {
     margin-right: 40px;
 }
 
+.border_img{
+    border-radius: 10px;
+    box-shadow: 4px 4px 6px 0 rgba(0, 0, 0, 0.3);
+}
+
 .paragraph {
     display: flex;
     flex-direction: column;
+    text-align: justify;;
 }
 /* footer */
 
