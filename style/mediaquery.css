@@ -1,0 +1,318 @@
+
+/* inicia mediaquery  */
+@media screen and (max-width: 1279px) {
+    .mainItems article {
+      height: 63vh;
+      width: 37vw;
+    }
+  
+    .mainItems article img {
+      height: 40vh;
+    }
+  
+    .mainItems article p {
+      font-size: 17px;
+    }
+  
+  
+  }
+  
+  @media screen and (max-width: 960px) {
+    .section-courses {
+      padding: 30px;
+    }
+    .foot-a{
+        gap:4rem;
+    }
+    .section-courses {
+      padding: 30px;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .left-ban h2 {
+      font-size: 2.2rem;
+    }
+  
+    nav li a {
+      font-size: 1.5rem;
+    }
+  
+    .mainItems article {
+      height: 62vh;
+      width: 65vw;
+    }
+  
+    .mainItems article img {
+      height: 37vh;
+    }
+  
+    .mainItems article p {
+      font-size: 16px;
+    }
+  
+    footer nav li a {
+      font-size: 1rem;
+    }
+  
+    .section-courses {
+      padding: 20px;
+    }
+  }
+  
+  @media screen and (max-width: 510px) {
+    .left-ban h2 {
+      font-size: 22px;
+      margin-left: 23px;
+    }
+  
+    nav ul li:hover {
+      letter-spacing: normal;
+      background-color: transparent;
+      color: none;
+      box-shadow: none;
+    }
+  
+    nav li a {
+      font-size: 1rem;
+      background-color: none;
+    }
+  
+    nav ul{
+     margin-right: 10px;
+    }
+    nav ul li {
+      margin: 0px;
+      border-radius: 15px;
+      padding: 0;
+      transition: all 0.5s ease;
+    }
+    .banner_Text h1 {
+        font-size: 2rem;
+        margin:  0 40px;
+      }
+    
+      .banner_Text p {
+        font-size: 20;
+        margin:  20px 40px 0;
+      }
+  
+   
+  
+    .mainItems {
+      justify-content: center;
+    }
+  
+    .mainItems article {
+      height: 72vh;
+      width: 68vw;
+    }
+  
+    .mainItems article img {
+      height: 37vh;
+    }
+  
+    main article button {
+      padding: 9px 10px;
+      font-size: 15px;
+      border: none;
+      border-radius: 1rem;
+    }
+  
+    .courses {
+      width: 100vw;
+      padding: 20px 10px;
+      gap: 15px;
+      padding-bottom: 2rem;
+    }
+
+    .courses article {
+      width: 30vw;
+      height: 20vh;
+    }
+  
+    .courses h3 {
+      font-size: 16px;
+    }
+  
+    .courses p {
+      font-size: 17px;
+    }
+  
+    .courses a {
+      font-size: 13px;
+    }
+
+    .foot-a {
+      gap: 1rem;
+      display:flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    footer nav li {
+      padding:0;
+    }
+  
+    footer nav li {
+        padding:0px;
+      }
+      footer nav ul li:hover {
+          letter-spacing: 0;
+          background-color: transparent;
+          color: transparent;
+          box-shadow: none;
+      }
+      .redes {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          padding-bottom: 2rem;
+      }
+      .redes p{
+          font-size: 14px;
+      }
+      /* seccion cursos */
+      .section-courses {
+        padding: 20px 15px;
+        gap: 15px;
+      }
+  }
+  
+  @media screen and (max-width: 480px) {
+    header{
+        gap: 0;
+    }
+    .left-ban h2 {
+      font-size: 22px;
+      margin-left: 23px;
+    }
+
+     nav ul{
+        padding-right: 1rem;
+     }
+    nav ul li:hover {
+      letter-spacing: normal;
+      background-color: transparent;
+      color: none;
+      box-shadow: none;
+    }
+  
+    nav li a {
+      font-size: 14px;
+      background-color: none;
+    }
+  
+    nav ul li {
+      margin-right: 0px;
+      border-radius: 15px;
+      padding: 0;
+      transition: all 0.5s ease;
+    }
+    
+  
+    .banner_Text h1 {
+      font-size: 2rem;
+      margin:  0 40px;
+    }
+  
+    .banner_Text p {
+      font-size: 20;
+      margin:  20px 40px 0;
+    }
+  
+    .mainItems {
+      justify-content: center;
+    }
+  
+    .mainItems article {
+      height: 72vh;
+      width: 68vw;
+    }
+  
+    .mainItems article img {
+      height: 37vh;
+    }
+  
+    main article button {
+      padding: 9px 10px;
+      font-size: 15px;
+      border: none;
+      border-radius: 1rem;
+    }
+  
+    .courses {
+      width: 100vw;
+      padding: 20px 10px;
+      gap: 15px;
+      padding-bottom: 2rem;
+    }
+    .courses article {
+      width: 30vw;
+      height: 20vh;
+    }
+  
+    .courses h3 {
+      font-size: 16px;
+    }
+  
+    .courses p {
+      font-size: 17px;
+    }
+  
+    .courses a {
+      font-size: 13px;
+    }
+    .foot-a {
+        gap: 1rem;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    footer nav li {
+      padding:0px;
+    }
+    footer nav ul li:hover {
+        letter-spacing: 0;
+        background-color: transparent;
+        color: transparent;
+        box-shadow: none;
+    }
+    .redes {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 2rem;
+    }
+    .redes p{
+        font-size: 14px;
+    }
+    /* seccion cursos */
+    .section-courses {
+      padding: 20px 10px;
+      gap: 15px;
+    }
+  
+    .section-courses article {
+      width: 230px;
+      height: 350px;
+    }
+  
+    .section-courses h3 {
+      font-size: 15px;
+    }
+  
+    .section-courses p {
+      font-size: 10px;
+    }
+  
+    .section-courses a {
+      font-size: 12px;
+    }
+  
+  }

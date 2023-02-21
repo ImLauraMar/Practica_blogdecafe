@@ -20,6 +20,8 @@
   color: var(--secondColor);  
   text-align: center;
   font-size: 2em;
+  margin: 0.5em 0 1em 0;
+
 }
 .container__contact{
   box-shadow: 0 0 20px 0 rgb(129, 0, 0);
@@ -97,7 +99,7 @@
   box-shadow: none;
 }
 .contact__info{
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.724);
   margin: 0;
   color: var(--firstColor)
 }
