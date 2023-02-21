@@ -452,7 +452,7 @@ footer img {
   color: var(--firstColor);
 }
 
-/* inicia mediaquery  */
+/* mediaquery en archivo de media query
 @media screen and (max-width: 1279px) {
   .mainItems article {
     height: 63vh;
@@ -508,29 +508,7 @@ footer img {
   }
   
 @media screen and (max-width: 480px) {
-  .banner_Text h1 {
-    font-size: 2.3rem;
-  }
-  .banner_Text p {
-    font-size: 20;
-  }
-  .mainItems {
-    justify-content: center;
-  }
-  .mainItems article {
-    height: 72vh;
-    width: 68vw;
-  }
-  .mainItems article img {
-    height: 37vh;
-  }
-
-  main article button {
-    padding: 9px 10px;
-    font-size: 15px;
-    border: none;
-    border-radius: 1rem;
-  }
+  
 
   .section-courses {
     padding: 20px 10px;
@@ -554,6 +532,6 @@ footer img {
     font-size: 12px;
   }
 
-}
+} */
 
 
