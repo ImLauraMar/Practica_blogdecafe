@@ -230,10 +230,14 @@ main article button:hover {
 }
 
 .courses h2 {
-  font-size: 1.875rem;
-  color: var(--secondColor);
-  text-transform: capitalize;
-  padding: 1rem;
+
+    font-size: 1.875rem;
+    color: var(--secondColor);
+    text-transform: capitalize;
+    padding: 1rem;
+    text-align: center;
+    
+
 }
 
 .container-article {
