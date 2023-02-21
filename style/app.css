@@ -316,7 +316,7 @@ main article button:hover {
 .tittleAboutUs {
   color: var(--secondColor);
   width: 100%;
-  padding: 10px;
+  padding: 20px 0px;   /*cambio padding de 10px a auto */
   display: flex;
   justify-content: center;
   font-size: 3rem;
@@ -350,11 +350,12 @@ main article button:hover {
   text-align: justify;
   flex-direction: column;
   text-align: justify;
+  padding: 35px; /*agregando padding */
 }
 
 .perfil {
   width: 100%;
-  padding: 10px;
+  padding: auto; /*cambio padding de 10px a auto */
   display: flex;
   justify-content: center;
   text-align: center;
