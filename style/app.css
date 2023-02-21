@@ -305,8 +305,14 @@ main article button:hover {
 
 /* todo INICIA CSS NOSOTROS */
 
+.sectionAU {
+  width: 100%;
+}
+
 .tittleAboutUs {
   color: var(--secondColor);
+  width: 100%;
+  padding: 10px;
   display: flex;
   justify-content: center;
   font-size: 3rem;
@@ -314,21 +320,64 @@ main article button:hover {
 
 .article_nosotros {
   margin: 0 60px 50px;
+  height: 500px;
   display: flex;
-  justify-content: right;
+  justify-content: center;
 }
 
 .img_aboutUs {
-  width: 500px;
+  width: 50%;
   object-fit: cover;
   max-height: 400px;
   margin-right: 40px;
 }
 
+.border_img:hover {
+  width: 30%;
+  border-radius: 20px;
+  filter: sepia(60%);
+  box-shadow: 4px 4px 6px 0 rgba(0, 0, 0, 0.3);
+}
+
 .paragraph {
   display: flex;
+  width: 60%;
+  font-size: 20px;
+  text-align: justify;
   flex-direction: column;
+  text-align: justify;
 }
+
+.perfil {
+  width: 100%;
+  padding: 10px;
+  background-color: #9a9191;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.article_perfil {
+  width: 40%;
+  display: flex;
+  margin: 40px 10px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f5f5f5;
+  -webkit-box-shadow: inset -1px 3px 8px 5px #1f87ff, 2px 5px 16px 0px #0b325e,
+    5px 5px 15px 5px rgba(0, 0, 0, 0);
+  box-shadow: inset -1px 3px 8px 5px #1f87ff, 2px 5px 16px 0px #0b325e,
+    5px 5px 15px 5px rgba(0, 0, 0, 0);
+}
+.article_perfil img {
+  width: 80%;
+  padding-top: 50px;
+}
+.article_perfil .name {
+  font-size: 20px;
+}
+
+
 /* footer */
 
 footer {
