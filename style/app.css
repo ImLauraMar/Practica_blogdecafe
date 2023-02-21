@@ -252,6 +252,7 @@ main article button:hover {
   margin: 1.5rem;
   padding: 1rem;
   background-color: var(--firstColor);
+  border: solid rgba(128, 128, 128, 0.17);
 }
 .courses article:hover {
   border: 2px var(--bgColor) solid;
@@ -261,6 +262,7 @@ main article button:hover {
 .courses h3 {
   color: #333;
   font-size: 1.2rem;
+  font-weight: bold;
   text-align: center;
   text-transform: uppercase;
   font-weight: 400;
@@ -279,12 +281,14 @@ main article button:hover {
   font-size: 1.44rem;
   font-weight: 100;
   text-transform: capitalize;
+  
 }
 
 .coursesPrice span {
   font-size: 1.25rem;
   color: #333;
   text-transform: capitalize;
+
 }
 
 .btnarticle {
@@ -351,7 +355,6 @@ main article button:hover {
 .perfil {
   width: 100%;
   padding: 10px;
-  background-color: #9a9191;
   display: flex;
   justify-content: center;
   text-align: center;
@@ -374,6 +377,7 @@ main article button:hover {
   padding-top: 50px;
 }
 .article_perfil .name {
+  padding: 8px;
   font-size: 20px;
 }
 
@@ -501,7 +505,7 @@ footer img {
   color: var(--firstColor);
 }
 
-/* mediaquery en archivo de media query
+/* mediaquery en archivo de media query*/
 @media screen and (max-width: 1279px) {
   .mainItems article {
     height: 63vh;
@@ -549,9 +553,9 @@ footer img {
   }
 }
 
-@media screen and (max-width: 510px) {
+@media screen and (max-width: 570px) {
     .section-courses {
-      padding: 20px 15px;
+      padding: 20px 12px;
       gap: 15px;
     }
   }
@@ -581,6 +585,6 @@ footer img {
     font-size: 12px;
   }
 
-} */
+} 
 
 
