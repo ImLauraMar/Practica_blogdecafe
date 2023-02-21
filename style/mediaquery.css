@@ -75,8 +75,11 @@
       background-color: none;
     }
   
+    nav ul{
+     margin-right: 10px;
+    }
     nav ul li {
-      margin-right: 10px;
+      margin: 0px;
       border-radius: 15px;
       padding: 0;
       transition: all 0.5s ease;
@@ -195,7 +198,7 @@
     }
   
     nav ul li {
-      margin-right: 10px;
+      margin-right: 0px;
       border-radius: 15px;
       padding: 0;
       transition: all 0.5s ease;
